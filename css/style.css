@@ -1,0 +1,233 @@
+/*** Brand Colors ***/
+/*** Base Mixins ***/
+/*** Font Sizes ***/
+html {
+  background: url(images/bg.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*** Reusable ***/
+.cover {
+  background: url(images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*** End Reusable ***/
+/*** Structure ***/
+/*Content Splashbox - homepage navigation module*/
+.row.content-splashbox,
+.container.row {
+  overflow: visible;
+  margin-top: 50px;
+}
+.content-splashbox {
+  border-top: 7px solid #930a0a;
+  border-bottom: 7px solid #930a0a;
+  position: relative;
+}
+.row.content-splashbox {
+  background: #f6f9de;
+  margin-right: 60px;
+}
+p, a {
+  color: #ffffff;
+}
+.hero {
+  width: 100%;
+  height: 300px;
+}
+/*** Splashbox Navigation block ***/
+/* Splashbox nav-menu-toggle */
+.nav-menu-toggle {
+  background: #930a0a;
+  display: block;
+  height: 50px;
+  position: absolute;
+  right: -50px;
+  top: -7px;
+  width: 50px;
+}
+.nav-menu-toggle p {
+  font-family: 'breezi_icon_setregular';
+  color: #6a0c0c;
+  font-size: 36pt;
+  margin-top: -22px;
+  border: none;
+  transition: all 1s ease-in-out;
+  position: absolute;
+  right: 5px;
+  top: 0px;
+}
+.nav-menu-toggle .nav-hide {
+  display: none;
+}
+.hero img {
+  height: 100%;
+  min-width: 450px;
+  width: auto;
+  margin-left: 5px;
+}
+.content-splashbox .nav-photo-hero {
+  margin: 0px;
+  overflow: hidden;
+}
+.content-splashbox .column {
+  margin: 0;
+}
+.content-splashbox .row .row {
+  display: block;
+}
+/*** Main Nav ***/
+.topbar {
+  display: none;
+}
+.nav-logo {
+  height: auto;
+  width: 80%;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.container {
+  overflow: visible !important;
+}
+.nav-main ul {
+  float: right;
+  padding-right: 18%;
+}
+.nav-main ul li {
+  display: inline;
+  list-style: none;
+}
+.nav-main a {
+  color: #4c4c4c;
+  text-decoration: none;
+  letter-spacing: .02em;
+  padding: 40px 10px;
+  font-family: 'BakerSignetStdRegular';
+}
+.nav-main li:hover {
+  background: #e9ecd5;
+  padding: 60px 0px;
+}
+.nav-main img {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 264px;
+}
+.nav-photo {
+  color: #ffffff;
+  font-family: 'BakerSignetStdRegular';
+  font-size: 14pt;
+  text-align: center;
+  border: none;
+  padding-top: 50px;
+}
+/* Splashbox background-images */
+.sensei-link,
+.contact-link {
+  background: url('images/fish1.jpg');
+}
+.learn-link {
+  background-image: url('images/learn.jpg');
+}
+.about-link {
+  background-image: url('images/about.jpg');
+}
+.shop-link {
+  background-image: url('images/store.jpg');
+}
+.experience-link {
+  background-image: url('images/landscape1.jpg');
+}
+.contact-link {
+  background-image: url('images/contact.jpg');
+}
+.sensei-link {
+  background-image: url('images/sensei.jpg');
+}
+.nav-photo-large {
+  background: url(images/fish1.jpg) no-repeat;
+  background-size: 480px auto;
+  width: 100%;
+  margin-left: 5px !important;
+  background-position: -80px -40px;
+}
+.content-splashbox .nav-photo-large {
+  margin: 0px;
+}
+.nav-photo {
+  overflow: visible !important;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  width: 100%;
+  height: auto;
+  background-size: 100% auto;
+}
+.content-splashbox .nav-photo {
+  margin: 0px;
+  width: 30%;
+  min-width: 300px;
+  height: 200px;
+  position: relative;
+  min-width: 240px;
+}
+.content-splashbox .nav-photo:hover {
+  background-image: none;
+  background-color: #930a0a;
+}
+.state-active-splashNav {
+  background-color: #930a0a;
+}
+.content-splashbox .nav-photo a {
+  position: absolute;
+  top: 45%;
+  left: 33%;
+  color: #ffffff;
+  border: none;
+  background: none;
+  font-size: 20px !important;
+  text-decoration: none;
+}
+.nav-photo img {
+  height: auto;
+  width: 100%;
+}
+/*** Bottom Nav ***/
+.nav-bg_gallery {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+button {
+  background: none repeat scroll 0 0 black;
+  border: medium none;
+  color: #ffffff;
+  font-family: "BakerSignetStdRegular";
+  font-size: 8pt;
+  opacity: 0.7;
+  padding: 10px;
+}
+button:hover {
+  color: black;
+  background: white;
+}
+/*** End Bottom Nav ***/
+/*** End Splashbox Navigation Block ***/
+@font-face {
+  font-family: 'BakerSignetStdRegular';
+  src: url('fonts/bakersignetstd-webfont.eot');
+  src: url('fonts/bakersignetstd-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/bakersignetstd-webfont.woff') format('woff'), url('fonts/bakersignetstd-webfont.ttf') format('truetype'), url('fonts/bakersignetstd-webfont.svg#BakerSignetStdRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'breezi_icon_setregular';
+  src: url('fonts/breezi_font-webfont-webfont.eot');
+  src: url('fonts/breezi_font-webfont-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/breezi_font-webfont-webfont.woff2') format('woff2'), url('fonts/breezi_font-webfont-webfont.woff') format('woff'), url('fonts/breezi_font-webfont-webfont.ttf') format('truetype'), url('fonts/breezi_font-webfont-webfont.svg#breezi_icon_setregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

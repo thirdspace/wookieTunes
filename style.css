@@ -1,0 +1,685 @@
+/*** BRAND COLORS ***/
+/*** BASE MIXING ***/
+.lib-icon {
+  content: '';
+  width: 30px;
+  height: 30px;
+  left: -30px;
+  top: -5px;
+  position: absolute;
+  z-index: 1000;
+}
+/*** FONT SIZES ***/
+h1 {
+  font-size: 3em !important;
+  color: #ffffff !important;
+  letter-spacing: .02em !important;
+  font-weight: 100 !important;
+}
+h2 {
+  font-size: .7em !important;
+  color: #88898c !important;
+  text-transform: uppercase;
+  font-weight: 300 !important;
+  letter-spacing: .1em !important;
+}
+h3 {
+  font-size: .85em !important;
+  color: #88898c !important;
+  text-transform: none;
+  font-weight: 200;
+  letter-spacing: .04em;
+}
+/*** Reusable ***/
+.hide {
+  display: none;
+}
+strong {
+  color: white;
+  font-weight: 400 !important;
+}
+label {
+  font-size: .8em !important;
+  color: #88898c !important;
+  text-transform: uppercase;
+  font-weight: 300 !important;
+  letter-spacing: .1em !important;
+}
+/*** End Reusable ***/
+/*** BUTTON STYLES ***/
+.nav-section-controls {
+  height: 40px;
+}
+button.btn_std {
+  background-color: #648f00;
+  line-height: 1.2em;
+  border: none;
+  display: block;
+  text-transform: uppercase;
+  font-size: .8em;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+button.btn_std.inactive {
+  border: 1px solid #648f00;
+  background: #121314;
+}
+button.btn_std.inactive:hover {
+  border: 1px solid white !important;
+}
+button.btn_std.followed {
+  border: 1px solid #648f00;
+}
+button.btn_std.play:hover {
+  background: #84bd00;
+}
+button.btn_std.follow:hover {
+  background: #121314;
+  border: 1px solid #648f00;
+}
+button.btn_std p {
+  color: white;
+}
+button.btn_std.follow,
+button.btn_std.followed {
+  padding: 7px 10px 0 15px;
+  height: 30px;
+}
+button.btn_std.follow p,
+button.btn_std.followed p {
+  font-size: 1.1em;
+}
+button.btn_std.play {
+  padding: 7px 10px 0 15px;
+  width: 100px;
+  height: 30px;
+}
+button.btn_std.play p {
+  font-size: 1.1em;
+}
+/*** Top Container Nav Module ***/
+ul.nav-container-main {
+  float: left;
+  clear: both;
+  margin-left: -30px;
+  margin-top: -15px;
+}
+ul.nav-container-main li {
+  color: #88898c;
+  padding-left: 10px;
+  display: inline;
+  font-size: 8.5pt;
+}
+.glyphicon-chevron-left {
+  padding-left: 20px;
+  color: #88898c !important;
+}
+.glyphicon-chevron-right {
+  color: #2c2d30 !important;
+  margin-left: 20px;
+}
+.play .glyphicon {
+  float: left;
+  clear: both;
+  font-size: 11pt !important;
+}
+.info {
+  margin-top: 80px;
+}
+.info button {
+  float: left;
+}
+.info > button.btn_std.follow,
+.info > button.btn_std.followed {
+  margin-left: 10px !important;
+}
+/* Small Circle Button*/
+.nav-more {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #88898c;
+  background-color: #121314;
+  line-height: 1em;
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+.nav-more:hover {
+  border: 1px solid white;
+}
+.nav-more p {
+  color: white;
+}
+/* Sidebar Button */
+.nav-social button {
+  background-color: #121314;
+  line-height: 1.2em;
+  border: 1px solid #88898c;
+  text-transform: uppercase;
+  font-size: .8em;
+  float: left;
+  clear: both;
+  margin-left: 25%;
+  color: white !important;
+  padding: 8px 25px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.active {
+  color: #88898c !important;
+}
+.inactive {
+  color: #2c2d30 !important;
+  margin-left: 20px;
+}
+/*** End Reusable ***/
+/*** Structure ***/
+.content-4albums {
+  margin-top: 10px;
+  max-width: 240px !important;
+}
+.content-4albums img {
+  float: left;
+  width: 50%;
+}
+.btn-close {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  color: white;
+  letter-spacing: .3em;
+  font-weight: 100;
+}
+/***  End Structure ***/
+html {
+  background: #121314;
+}
+.container {
+  width: 100% !important;
+}
+.info > h1 {
+  margin-top: -5px;
+  font-weight: 100 !important;
+}
+/*** Content Section styling ***/
+.meta {
+  float: left;
+  border-top: 1px solid #222326;
+  border-bottom: 1px solid #222326;
+  padding: 10px 0px;
+  margin: 10px 0px;
+}
+.meta p {
+  color: #88898c;
+  float: left;
+  font-weight: 300;
+}
+.meta .subnav-label {
+  float: right;
+}
+.meta button {
+  float: right;
+  display: block;
+  margin-left: 10px;
+}
+/* Filter bar styling*/
+.filter:not(first-child):before {
+  content: '|';
+  color: #222326;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.filter:first-child:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: #84bd00 transparent transparent transparent;
+}
+.filter {
+  width: 200px;
+}
+.filter p {
+  color: #88898c;
+  text-align: left;
+  font-size: 9pt;
+  padding: 5px 0px 15px 15px;
+  margin: 10px -15px;
+  border-bottom: 1px solid #222326;
+}
+.filter .selected {
+  color: white !important;
+  font-weight: 500 !important;
+}
+/* Temporary width set until fluid width added */
+.filter.track-time {
+  width: 60px !important;
+}
+/*** End Content Section Styling ***/
+/*** Header Styling ***/
+header {
+  color: white;
+  padding-top: 20px;
+  background: #222326;
+  border-bottom: 2px solid #2c2d30;
+}
+header input {
+  clear: both;
+  margin-left: 40px;
+  border: none;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+header p.header-title {
+  color: white;
+  width: auto;
+  margin-left: 10%;
+  margin-top: -30px;
+  margin-bottom: 20px;
+}
+header .search {
+  position: relative;
+}
+header input.search:after {
+  background: url(images/icon-search.png) no-repeat;
+  content: '';
+  position: absolute;
+  top: 0px;
+  width: 40px;
+  height: 30px;
+  left: 30px;
+  z-index: 8000;
+}
+/*** Library Nav ***/
+.nav-library {
+  height: 280px;
+  overflow-y: scroll;
+  background: #222326;
+}
+.nav-library ul li:last-child {
+  padding-bottom: 30px;
+}
+.nav-library li {
+  list-style: none;
+  color: #88898c;
+  padding-bottom: 5px;
+  position: relative;
+}
+.nav-library label {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+/* Scrollbar styling */
+.spotifynav::-webkit-scrollbar {
+  width: 12px;
+}
+/* this targets the default scrollbar (compulsory) */
+.spotifynav::-webkit-scrollbar-track {
+  background-color: #1c1c1f;
+}
+/* the new scrollbar will have a flat appearance with the set background color */
+.spotifynav::-webkit-scrollbar-thumb {
+  background-color: #2c2d30;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 2px solid #1c1c1f;
+}
+/* this will style the thumb, ignoring the track */
+.spotifynav::-webkit-scrollbar-button {
+  background-color: #1c1c1f;
+}
+/* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+.spotifynav::-webkit-scrollbar-corner {
+  background-color: black;
+}
+/* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+/* Library Icons */
+.lib-browse:before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  left: -30px;
+  top: -5px;
+  position: absolute;
+  z-index: 1000;
+  background: url(images/icon-collection.png) no-repeat;
+}
+.lib-activity:before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  left: -30px;
+  top: -5px;
+  position: absolute;
+  z-index: 1000;
+  background: url(images/icon-shared.png) no-repeat;
+}
+.lib-radio:before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  left: -30px;
+  top: -5px;
+  position: absolute;
+  z-index: 1000;
+  background: url(images/icon-radio.png) no-repeat;
+}
+.lib-follow:before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  left: -30px;
+  top: -5px;
+  position: absolute;
+  z-index: 1000;
+  background: url(images/icon-numbers.png) no-repeat;
+}
+.lib-toplists:before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  left: -30px;
+  top: -5px;
+  position: absolute;
+  z-index: 1000;
+  background: url(images/icon-inbox.png) no-repeat;
+}
+.lib-messages:before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  left: -30px;
+  top: -5px;
+  position: absolute;
+  z-index: 1000;
+  background: url(images/icon-layers.png) no-repeat;
+}
+.lib-playqueue:before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  left: -30px;
+  top: -5px;
+  position: absolute;
+  z-index: 1000;
+  background: url(images/icon-files.png) no-repeat;
+}
+.lib-devices:before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  left: -30px;
+  top: -5px;
+  position: absolute;
+  z-index: 1000;
+  background: url(images/icon-inbox.png) no-repeat;
+}
+.lib-appfinder:before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  left: -30px;
+  top: -5px;
+  position: absolute;
+  z-index: 1000;
+  background: url(images/icon-box.png) no-repeat;
+}
+.lib-songs:before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  left: -30px;
+  top: -5px;
+  position: absolute;
+  z-index: 1000;
+  background: url(images/icon-note.png) no-repeat;
+}
+.lib-albums:before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  left: -30px;
+  top: -5px;
+  position: absolute;
+  z-index: 1000;
+  background: url(images/icon-record.png) no-repeat;
+}
+.lib-artists:before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  left: -30px;
+  top: -5px;
+  position: absolute;
+  z-index: 1000;
+  background: url(images/icon-mic.png) no-repeat;
+}
+.lib-localfiles:before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  left: -30px;
+  top: -5px;
+  position: absolute;
+  z-index: 1000;
+  background: url(images/icon-audiofile.png) no-repeat;
+}
+.lib-starred:before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  left: -30px;
+  top: -5px;
+  position: absolute;
+  z-index: 1000;
+  background: url(images/icon-star.png) no-repeat;
+}
+.lib-playlist:before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  left: -30px;
+  top: -5px;
+  position: absolute;
+  z-index: 1000;
+  background: url(images/icon-music.png) no-repeat;
+}
+li.lib-newplaylist > a {
+  padding: 7px 10px 5px 30px;
+  margin-left: -20px;
+  font-size: .9em;
+  background-color: #1c1c1f;
+  color: white;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.lib-newplaylist {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  margin-left: -25px;
+}
+.lib-newplaylist :before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  z-index: 1000;
+  background: url(images/icon-newplaylist.png) no-repeat;
+}
+/* Now Playing Box */
+.container-nowplaying {
+  position: relative;
+}
+.nowplaying-song,
+.nowplaying-artist {
+  color: white;
+  text-align: left;
+}
+.container-nowplaying p.glyphicon {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  color: #88898c;
+  display: block;
+}
+.container-nowplaying time {
+  position: absolute;
+  right: -10px;
+  top: 7px;
+  font-size: 9pt;
+  color: white;
+}
+.nowplaying-song {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.nowplaying-artist {
+  font-size: .8em;
+}
+.save-btn {
+  position: absolute;
+  right: -15px;
+  top: 20px;
+}
+/*** End Library nav ***/
+/*** Tracklisting ***/
+.track {
+  padding-top: 7px;
+  padding-bottom: 2px;
+  border-top: 1px solid #222326;
+}
+.track p {
+  color: white;
+  text-align: left;
+  font-size: 10pt;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.track-time p,
+.track-added p,
+.track-users p {
+  color: #88898c !important;
+}
+.filter-bar {
+  border-bottom: 1px solid #222326;
+}
+/*** End Tracklisting ***/
+/*** Social Nav ***/
+.nav-social {
+  background: #222326;
+  padding-bottom: 20px;
+  position: relative;
+  margin-top: -5px;
+  /* Friends you might know block */
+  /* Friend activity block */
+}
+.nav-social .container-social {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #121314;
+}
+.nav-social .social-friendname,
+.nav-social .social-followercount {
+  color: white;
+  float: left;
+  clear: both;
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
+}
+.nav-social .social-friendname {
+  font-weight: 400;
+  margin-top: 5px;
+}
+.nav-social .social-followercount {
+  text-transform: uppercase;
+  color: #88898c;
+  font-size: .85em;
+  letter-spacing: .02em;
+  margin-top: -7px;
+}
+.nav-social .whotofollow img {
+  margin-left: 36%;
+  margin-top: 7px;
+}
+.nav-social .friendactivity {
+  height: 400px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100%;
+  margin: 0 10px 10px 20px;
+}
+.nav-social .friendaction {
+  border: 1px solid #1c1c1f;
+  min-height: 120px;
+}
+.nav-social h3 {
+  line-height: 1.2em;
+}
+.nav-social .friendactivity img {
+  margin-top: 15%;
+  margin-bottom: 15px;
+}
+.nav-social p.songtitle {
+  color: white;
+  text-align: left;
+  font-weight: 500;
+  line-height: 1.2em;
+  margin-top: 10px;
+}
+.nav-social p.artistname {
+  color: #88898c;
+  text-align: left;
+  margin-top: -10px;
+  font-weight: 300;
+}
+/* /social nav */
+/*** Custom Fonts ***/
+@font-face {
+  font-family: 'BakerSignetStdRegular';
+  src: url('fonts/bakersignetstd-webfont.eot');
+  src: url('fonts/bakersignetstd-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/bakersignetstd-webfont.woff') format('woff'), url('fonts/bakersignetstd-webfont.ttf') format('truetype'), url('fonts/bakersignetstd-webfont.svg#BakerSignetStdRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'breezi_icon_setregular';
+  src: url('fonts/breezi_font-webfont-webfont.eot');
+  src: url('fonts/breezi_font-webfont-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/breezi_font-webfont-webfont.woff2') format('woff2'), url('fonts/breezi_font-webfont-webfont.woff') format('woff'), url('fonts/breezi_font-webfont-webfont.ttf') format('truetype'), url('fonts/breezi_font-webfont-webfont.svg#breezi_icon_setregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

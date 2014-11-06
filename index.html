@@ -1,0 +1,399 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>Spotify Premium Webapp</title>
+	<link rel="stylesheet" href="style.css" tyle="text/css" />
+	<link rel="stylesheet/less" href="style.less" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap-theme.css" tyle="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" tyle="text/css" />
+	<script src="js/vendor/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.jscrollpane.min"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="http://lesscss.googlecode.com/files/less-1.0.21.min.js"></script>
+
+	  <script>
+	  			//Initiate scrollbars
+	  			$(document).ready(function (){
+      				$("button").click(function (){
+      					$(this).addClass("active");
+      				});
+      			});
+	  </script>
+	  <style>
+	  p {
+	  	color: #000;
+	  	text-align: center;
+	  }
+	  </style>
+</head>
+<body>
+	<div class="container">
+
+		<div class="row"> <!-- First Row - Nav -->
+
+			<header class="col-md-12">
+				<div class="row">
+					<ul class="nav-container-main">
+						<li>File</li>
+						<li>Edit</li>
+						<li>View</li>
+						<li>Playback</li>
+						<li>Help</li>
+					</ul>
+				</div><!-- End Row -->
+				<div class="row">
+					<p class="glyphicon glyphicon-chevron-left"></p><p class="glyphicon glyphicon-chevron-right"></p><input class="search header-search" type="search"></input> <p class="header-title">Spotify Premium</p>
+					</header><!-- /header col-md-12 -->
+				</div> <!-- /First row - nav -->
+
+		<div class="row"><!-- Second Row - Body -->
+
+			<div class="col-md-2">
+				<div class="row">
+					<div class="nav-library spotifynav col-md-12">
+						<label>Menu</label>
+							<ul> 
+								<li class="lib-browse">Browse</li>
+								<li class="lib-activity">Activity</li>
+								<li class="lib-radio">Radio</li>
+								<li class="lib-follow">Follow</li>
+								<li class="lib-toplists">Top Lists</li>
+								<li class="lib-messages">Messages</li>
+								<li class="lib-playqueue">Play Queue</li>
+								<li class="lib-devices">Devices</li>
+								<li class="lib-appfinder">App Finder</li>
+							</ul>
+						<label>Your Music</label>
+							<ul> 
+								<li class="lib-songs">Songs</li>
+								<li class="lib-albums">Albums</li>
+								<li class="lib-artists">Artists</li>
+								<li class="lib-localfiles">Local Files</li>
+								<li class="lib-newplaylist"><a href="#" target="_self">New Playlist</a></li>
+								<li class="lib-starred">Starred</li>
+								<li class="lib-playlist">Sample Playlist 1</li>
+								<li class="lib-playlist">Sample Playlist 2</li>
+								<li class="lib-playlist">Sample Playlist 3</li>
+							</ul>
+
+					</div>
+				</div><!-- End Row -->
+
+				<div class="row">
+					<!-- Now Playing Artwork -->
+					<img class="img-responsive" src="images/album_art-hero-placeholder1.png" />
+				</div><!-- End Row -->
+
+				<div class="row" style="background: #222326;">
+					<!-- Now Playing Track Info -->
+					<div class="container-nowplaying col-md-11">
+						<p class="nowplaying-song">Untouchable - (Henree Remix)</p>
+						<p class="nowplaying-artist">Paul SG</p>
+						<a class="save-btn" href="#" target="_self"><img src="images/icon-newplaylist.png" /></a>
+					</div><!-- End Container Nowplaying -->
+				</div><!-- End Row -->
+
+				<div class="row" style="background: #222326;">
+					<!-- controls -->
+					<div class="container-nowplaying col-md-11">
+						<div class="controls">
+							<a href="#"><img class="back-btn" src="images/btn-back.png" /></a>
+							<a href="#"><img class="play-btn" src="images/btn-play.png" /></a>
+							<a href="#"><img class="pause-btn hide" src="images/btn-pause.png" /></a>
+							<a href="#"><img class="next-btn" src="images/btn-next.png" /><a/>
+						</div><!-- End Controls -->
+						<p class="glyphicon glyphicon-volume-up"></p>
+						<time>55:14</time>
+
+					</div><!-- End Container Nowplaying -->
+				</div><!-- End Row -->
+
+			</div> <!--End Nav-library - col-md-3 -->
+
+			<div class="content col-md-8">
+				<div class="row">
+					<div class="content-4albums col-md-4">
+							<img class="img-responsive" src="images/album_art-placeholder1.png" />
+							<img class="img-responsive" src="images/album_art-placeholder2.png" />
+							<img class="img-responsive" src="images/album_art-placeholder3.png" />
+							<img class="img-responsive" src="images/album_art-placeholder4.png" />
+					</div>
+					<div class="info col-md-7"><!-- Should this be 4??? -->
+						<h2>Playlist</h2>
+						<h1>LiquidDnb</h1>
+						<button class="btn_std play"><p class="glyphicon glyphicon-volume-up"></p><p>Pause</p><p class="hide">Play</p></button>
+						<button class="hide btn_std follow"><p>Follow</p><button class="btn_std inactive followed"><p>Followed</p></button>
+						<button class="nav-more"><p>...</p></button>
+					</div>
+				</div><!-- /row -->
+
+				<div class="row">
+					<div class="meta col-md-12">
+						<p class="collection-info">Created by: <strong>Brian Baker</strong> &bull; 939 songs, 89 hr 58 min</p>
+						<button>X</button>
+						<p class="subnav-label">Available Offline</p>
+					</div><!-- End Meta -->
+				</div><!-- /row -->
+
+				<div class="row">
+					<div class="tracklisting col-md-12">
+						
+						<div class="row filter-bar">
+							<div class="filter col-md-3"><label class="selected">Track</label>
+							</div>
+							<div class="filter col-md-2"><label>Artist</label>
+							</div>
+							<div class="filter col-md-1"><label>Time</label>
+							</div>
+							<div class="filter col-md-3"><label>Album</label>
+							</div>
+							<div class="filter col-md-1"><label>Added</label>
+							</div>
+							<div class="filter col-md-2"><label>Users</label>
+							</div>
+						</div>
+
+						<div class="row track">
+							<div class="track-info col-md-3"><p>
+							8-Bit Blues</p>
+							</div>
+							<div class="track-artist col-md-2"><p>Command Strange</p>
+							</div>
+							<div class="track-time col-md-1"><p>4:13</p>
+							</div>
+							<div class="track-album col-md-3"><p>Grinda</p>
+							</div>
+							<div class="track-added col-md-1"><p>Sat Jun 14</p>
+							</div>
+							<div class="track-users col-md-2"><p>Tom</p>
+							</div>
+						</div>
+
+						<div class="row track">
+							<div class="track-info col-md-3"><p>
+							Detour</p>
+							</div>
+							<div class="track-artist col-md-2"><p>MiMOSA</p>
+							</div>
+							<div class="track-time col-md-1"><p>2:48</p>
+							</div>
+							<div class="track-album col-md-3"><p>Silver Lining</p>
+							</div>
+							<div class="track-added col-md-1"><p>Sat Jun 14</p>
+							</div>
+							<div class="track-users col-md-2"><p>Stephen Peaslee</p>
+							</div>
+						</div>
+
+						<div class="row track">
+							<div class="track-info col-md-3"><p>
+							Moving in Transit (Bcee & Lomax Remix)</p>
+							</div>
+							<div class="track-artist col-md-2"><p>Electrosoul System</p>
+							</div>
+							<div class="track-time col-md-1"><p>5:50</p>
+							</div>
+							<div class="track-album col-md-3"><p>Future Retro Drum &amp; Bass</p>
+							</div>
+							<div class="track-added col-md-1"><p>Sat Jun 14</p>
+							</div>
+							<div class="track-users col-md-2"><p>Stephen Peaslee</p>
+							</div>
+						</div>
+
+						<div class="row track">
+							<div class="track-info col-md-3"><p>
+							Hideous Kinky</p>
+							</div>
+							<div class="track-artist col-md-2"><p>Future Cut</p>
+							</div>
+							<div class="track-time col-md-1"><p>3:45</p>
+							</div>
+							<div class="track-album col-md-3"><p>Stateside Sessions</p>
+							</div>
+							<div class="track-added col-md-1"><p>Sat Jun 14</p>
+							</div>
+							<div class="track-users col-md-2"><p>Stephen Peaslee</p>
+							</div>
+						</div>
+
+						<div class="row track">
+							<div class="track-info col-md-3"><p>
+							Twentyfive Miles</p>
+							</div>
+							<div class="track-artist col-md-2"><p>Modemellow</p>
+							</div>
+							<div class="track-time col-md-1"><p>5:17</p>
+							</div>
+							<div class="track-album col-md-3"><p>Outer Mind EP</p>
+							</div>
+							<div class="track-added col-md-1"><p>Sat Jun 14</p>
+							</div>
+							<div class="track-users col-md-2"><p>Stephen Peaslee</p>
+							</div>
+						</div>
+
+						<div class="row track">
+							<div class="track-info col-md-3"><p>
+							Something in the Air</p>
+							</div>
+							<div class="track-artist col-md-2"><p>L.A.O.S.</p>
+							</div>
+							<div class="track-time col-md-1"><p>5:57</p>
+							</div>
+							<div class="track-album col-md-3"><p>GTGD</p>
+							</div>
+							<div class="track-added col-md-1"><p>Sat Jun 14</p>
+							</div>
+							<div class="track-users col-md-2"><p>Stephen Peaslee</p>
+							</div>
+						</div>
+
+								<div class="row track">
+							<div class="track-info col-md-3"><p>
+							Skyward - Instrumental Mix</p>
+							</div>
+							<div class="track-artist col-md-2"><p>Makoto, Akira</p>
+							</div>
+							<div class="track-time col-md-1"><p>7:09</p>
+							</div>
+							<div class="track-album col-md-3"><p>Progression Sessions</p>
+							</div>
+							<div class="track-added col-md-1"><p>Sat Jun 14</p>
+							</div>
+							<div class="track-users col-md-2"><p>Stephen Peaslee</p>
+							</div>
+						</div>
+
+								<div class="row track">
+							<div class="track-info col-md-3"><p>
+							Raindrop - Reflex</p>
+							</div>
+							<div class="track-artist col-md-2"><p>Toez</p>
+							</div>
+							<div class="track-time col-md-1"><p>5:42</p>
+							</div>
+							<div class="track-album col-md-3"><p>Special Circumstances</p>
+							</div>
+							<div class="track-added col-md-1"><p>Sat Jun 14</p>
+							</div>
+							<div class="track-users col-md-2"><p>Stephen Peaslee</p>
+							</div>
+						</div>
+
+					</div><!-- End Tracklisting -->
+				</div><!-- End Row -->
+
+				<div class="row">
+					<div class="playlist col-md-7">
+					</div>
+				</div><!-- /row -->
+			</div><!-- /content - col-md-7 -->
+
+				<div class="nav-social col-md-2">
+					<div class="row">
+
+						<div class="container-social whotofollow col-md-12">
+							<h3>Who to Follow</h3><span class="btn-close">x</span>
+							<img class="content-photo-social" src="images/image-social-placeholder1.png" width="50" height="50" />
+							<p class="social-friendname">Sean Connary</p>
+							<p class="social-followercount">9,420 Followers</p>
+							<button>Follow</button>
+						</div><!-- /Container-social -->
+
+						<div class="container-social friendactivity spotifynav jspContainer">
+							<div class="row">
+								<div class="friendaction">
+									<div class="col-md-12">
+										<h3><strong>Aaron Kunde</strong> listened to</h3>
+									</div>
+
+									<div class="col-md-4">
+										<img class="" src="images/album_art-placeholder5.png" height="50" width="50" />
+									</div>
+
+									<div class="col-md-8">
+										<p class="songtitle">Love Songs</p>
+										<p class="artistname">Nit Grit</p>
+									</div>
+								</div><!-- /friendaction -->
+
+								<div class="friendaction">
+									<div class="col-md-12">
+										<h3><strong>Aaron Kunde</strong> listened to</h3>
+									</div>
+
+									<div class="col-md-4">
+										<img class="" src="images/album_art-placeholder5.png" height="50" width="50" />
+									</div>
+
+									<div class="col-md-8">
+										<p class="songtitle">Love Songs</p>
+										<p class="artistname">Nit Grit</p>
+									</div>
+								</div><!-- /friendaction -->
+
+								<div class="friendaction">
+									<div class="col-md-12">
+										<h3><strong>Aaron Kunde</strong> listened to</h3>
+									</div>
+
+									<div class="col-md-4">
+										<img class="" src="images/album_art-placeholder5.png" height="50" width="50" />
+									</div>
+
+									<div class="col-md-8">
+										<p class="songtitle">Love Songs</p>
+										<p class="artistname">Nit Grit</p>
+									</div>
+								</div><!-- /friendaction -->
+
+								<div class="friendaction">
+									<div class="col-md-12">
+										<h3><strong>Aaron Kunde</strong> listened to</h3>
+									</div>
+
+									<div class="col-md-4">
+										<img class="" src="images/album_art-placeholder5.png" height="50" width="50" />
+									</div>
+
+									<div class="col-md-8">
+										<p class="songtitle">Love Songs</p>
+										<p class="artistname">Nit Grit</p>
+									</div>
+								</div><!-- /friendaction -->
+
+								<div class="friendaction">
+									<div class="col-md-12">
+										<h3><strong>Aaron Kunde</strong> listened to</h3>
+									</div>
+
+									<div class="col-md-4">
+										<img class="" src="images/album_art-placeholder5.png" height="50" width="50" />
+									</div>
+
+									<div class="col-md-8">
+										<p class="songtitle">Love Songs</p>
+										<p class="artistname">Nit Grit</p>
+									</div>
+								</div><!-- /friendaction -->
+
+							</div><!-- row /friendaction -->
+							
+						</div><!-- /Container-social -->
+
+					</div><!-- /row nav-social -->
+				</div><!-- /Nav-social - col-md-2 -->
+
+
+
+		</div><!-- /Second Row - Body -->
+
+		<div class="row"><!-- Third Row - Nav-controls -->
+		</div><!-- /Third row - Nav-controls -->
+
+	</div><!--End Container-->
+</body>
+</html>

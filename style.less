@@ -1,0 +1,611 @@
+/*** BRAND COLORS ***/
+@bright-green: #84BD00;
+@dull-green: #648f00;
+@dark-grey: #121314;
+@dark-grey-accent: #1c1c1f;
+@mid-grey: #222326;
+@mid-grey-accent: #2c2d30;
+@light-grey: #88898c;
+@light-grey-accent: #dfe0e5;
+
+
+
+
+/*** BASE MIXING ***/
+
+.border-radius (@radius: 30px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius:    @radius;
+  border-radius:         @radius;
+
+  -moz-background-clip:    padding;
+  -webkit-background-clip: padding-box;
+  background-clip:         padding-box;
+}
+.border-radius-small (@radius: 4px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius:    @radius;
+  border-radius:         @radius;
+
+  -moz-background-clip:    padding;
+  -webkit-background-clip: padding-box;
+  background-clip:         padding-box;
+}
+
+.lib-icon {
+    content: '';
+    width: 30px;
+    height: 30px;
+    left: -30px;
+    top: -5px;
+    position: absolute;
+    z-index: 1000;
+}
+
+/*** FONT SIZES ***/
+
+h1 {
+  font-size: 3em !important;
+  color: #ffffff !important;
+  letter-spacing: .02em !important;
+  font-weight: 100 !important;
+}
+h2 {
+  font-size: .7em !important;
+  color: @light-grey !important;
+  text-transform: uppercase;
+  font-weight: 300 !important;
+  letter-spacing: .1em !important;
+}
+h3 {
+   font-size: .85em !important;
+   color: @light-grey !important;
+   text-transform: none;
+   font-weight: 200;
+   letter-spacing: .04em;
+}
+/*** Reusable ***/
+
+.hide {
+  display: none;
+}
+
+strong {
+      color: white;
+      font-weight: 400 !important;
+}
+label {
+      font-size: .8em !important;
+      color: @light-grey !important;
+      text-transform: uppercase;
+      font-weight: 300 !important;
+      letter-spacing: .1em !important;
+}
+/*** End Reusable ***/
+
+/*** BUTTON STYLES ***/
+
+.nav-section-controls {
+  height: 40px;
+}
+button.btn_std {
+  background-color: @dull-green;
+  line-height: 1.2em;
+  border: none;
+  display: block;
+  text-transform: uppercase;
+  font-size: .8em;
+  &.inactive {
+    border: 1px solid @dull-green;
+    background: @dark-grey;
+    &:hover {
+    border: 1px solid white !important;
+    }
+  }
+  &.followed {
+    border: 1px solid @dull-green;
+  }
+    &.play:hover {
+      background: @bright-green;
+    }
+    &.follow:hover {
+      background: @dark-grey;
+      border: 1px solid @dull-green;
+    }
+    p { 
+      color: white;
+      }
+    &.follow, &.followed {
+      padding: 7px 10px 0 15px;
+      height: 30px;
+      p {
+        font-size: 1.1em;
+      }
+    }
+    &.play {
+      padding: 7px 10px 0 15px;
+      width: 100px;
+      height: 30px;
+      p {
+        font-size: 1.1em;
+      }
+    }
+  .border-radius();
+}
+/*** Top Container Nav Module ***/
+ul.nav-container-main {
+  float: left;
+  clear: both;
+  margin-left: -30px;
+  margin-top: -15px;
+  li {
+    color: @light-grey;
+    padding-left: 10px;
+    display: inline;
+    font-size: 8.5pt;
+  }
+}
+.glyphicon-chevron-left {
+  padding-left: 20px;
+  .active();
+}
+.glyphicon-chevron-right {
+  .inactive();
+}
+.play .glyphicon {
+  float: left;
+  clear: both;
+  font-size: 11pt !important;
+}
+.info {
+  margin-top: 80px;
+}
+.info button {
+  float: left;
+}
+.info > button.btn_std.follow, .info > button.btn_std.followed {
+      margin-left: 10px !important;
+}
+/* Small Circle Button*/
+.nav-more {
+  .border-radius();
+  border: 1px solid @light-grey;
+  background-color: @dark-grey;
+  line-height: 1em;
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  font-weight: 600;
+    &:hover {
+       border: 1px solid white;
+    }
+      p {
+      color: white;
+    }
+}
+
+/* Sidebar Button */
+.nav-social button {
+  background-color: @dark-grey;
+  line-height: 1.2em;
+  border: 1px solid @light-grey;
+  text-transform: uppercase;
+  font-size: .8em;
+  float: left;
+  clear: both;
+  margin-left: 25%;
+  color: white !important;
+  padding: 8px 25px;
+  .border-radius();
+}
+.active {
+  color: @light-grey !important;
+}
+.inactive {
+  color: @mid-grey-accent !important;
+  margin-left: 20px;
+}
+
+/*** End Reusable ***/
+
+/*** Structure ***/
+.content-4albums {
+    margin-top: 10px;
+    max-width: 240px !important;
+      img {
+      float: left;
+      width: 50%;
+      }
+}
+
+.btn-close {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  color: white;
+  letter-spacing: .3em;
+  font-weight: 100;
+}
+
+/***  End Structure ***/
+
+html {
+  background: @dark-grey;
+}
+.container {
+  width: 100% !important;
+}
+.info > h1 {
+  margin-top: -5px;
+  font-weight: 100 !important;
+}
+/*** Content Section styling ***/
+  .meta {
+    float: left;
+    border-top: 1px solid @mid-grey;
+    border-bottom: 1px solid @mid-grey;
+    padding: 10px 0px;
+    margin: 10px 0px;
+      p {
+         color: @light-grey;
+         float: left;
+        font-weight: 300;
+      }
+      .subnav-label {
+        float: right;
+      }
+      button {
+        float: right;
+        display: block;
+        margin-left: 10px;
+      }
+  }
+  /* Filter bar styling*/
+    .filter:not(first-child):before {
+            content: '|';
+            color: @mid-grey;
+            position: absolute;
+            left: 0;
+            top: 0;
+    }
+   .filter:first-child:after {
+      content: '';
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        border-style: solid;
+        border-width: 5px 5px 0 5px;
+        border-color: @bright-green transparent transparent transparent;
+    }
+    .filter {
+      width: 200px;
+        p {
+          color: @light-grey;
+          text-align: left;
+          font-size: 9pt;
+          padding: 5px 0px 15px 15px;
+          margin: 10px -15px;
+          border-bottom: 1px solid @mid-grey;
+        }
+        .selected {
+          color: white !important;
+          font-weight: 500 !important;
+        }
+    }
+    /* Temporary width set until fluid width added */
+    .filter.track-time {
+      width: 60px !important;
+    }
+/*** End Content Section Styling ***/
+/*** Header Styling ***/
+  header {
+    color: white;
+    padding-top: 20px;
+    background: @mid-grey;
+    border-bottom: 2px solid @mid-grey-accent;
+      input {
+          clear: both;
+          margin-left: 40px;
+          border: none;
+          .border-radius();
+      }
+      p.header-title {
+        color: white;
+        width: auto;
+        margin-left: 10%;
+        margin-top: -30px;
+        margin-bottom: 20px;
+      }
+      .search {
+        position: relative;
+      }
+     input.search:after {
+        background: url(images/icon-search.png) no-repeat;
+        content:'';
+        position: absolute;
+        top: 0px;
+        width: 40px;
+        height: 30px;
+        left: 30px;
+        z-index: 8000;
+      }
+}
+
+/*** Library Nav ***/
+  .nav-library {
+  height: 280px;
+  overflow-y: scroll;
+  background: @mid-grey;
+    & ul li:last-child {
+      padding-bottom: 30px;
+  }
+    li {
+      list-style: none;
+      color: @light-grey;
+      padding-bottom: 5px;
+      position: relative;
+    }
+  }
+  .nav-library label {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  /* Scrollbar styling */
+
+ .spotifynav::-webkit-scrollbar {
+      width: 12px;
+
+} /* this targets the default scrollbar (compulsory) */
+ .spotifynav::-webkit-scrollbar-track {
+      background-color: @dark-grey-accent;
+} /* the new scrollbar will have a flat appearance with the set background color */
+ 
+.spotifynav::-webkit-scrollbar-thumb {
+      background-color: @mid-grey-accent;
+      .border-radius();
+      border: 2px solid @dark-grey-accent;
+} /* this will style the thumb, ignoring the track */
+ 
+.spotifynav::-webkit-scrollbar-button {
+      background-color: @dark-grey-accent;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+ 
+.spotifynav::-webkit-scrollbar-corner {
+      background-color: black;
+} /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+
+  /* Library Icons */
+  .lib-browse:before {
+    .lib-icon();
+    background: url(images/icon-collection.png) no-repeat;
+  }
+  .lib-activity:before {
+    .lib-icon();
+    background: url(images/icon-shared.png) no-repeat;
+  }
+  .lib-radio:before {
+    .lib-icon();
+    background: url(images/icon-radio.png) no-repeat;
+  }
+  .lib-follow:before {
+    .lib-icon();
+    background: url(images/icon-numbers.png) no-repeat;
+  }
+  .lib-toplists:before {
+    .lib-icon();
+    background: url(images/icon-inbox.png) no-repeat;
+  }
+   .lib-messages:before {
+    .lib-icon();
+    background: url(images/icon-layers.png) no-repeat;
+  }
+   .lib-playqueue:before {
+    .lib-icon();
+    background: url(images/icon-files.png) no-repeat;
+  }
+  .lib-devices:before {
+    .lib-icon();
+    background: url(images/icon-inbox.png) no-repeat;
+  }
+   .lib-appfinder:before {
+    .lib-icon();
+    background: url(images/icon-box.png) no-repeat;
+  }
+  .lib-songs:before {
+    .lib-icon();
+    background: url(images/icon-note.png) no-repeat;
+  }
+  .lib-albums:before {
+    .lib-icon();
+    background: url(images/icon-record.png) no-repeat;
+  }
+  .lib-artists:before {
+    .lib-icon();
+    background: url(images/icon-mic.png) no-repeat;
+  }
+   .lib-localfiles:before {
+    .lib-icon();
+    background: url(images/icon-audiofile.png) no-repeat;
+  }
+  .lib-starred:before {
+    .lib-icon();
+    background: url(images/icon-star.png) no-repeat;
+  }
+  .lib-playlist:before {
+  .lib-icon();
+    background: url(images/icon-music.png) no-repeat;
+  }
+  li.lib-newplaylist > a {
+    padding: 7px 10px 5px 30px;
+    margin-left: -20px; 
+    font-size: .9em;
+    background-color: @dark-grey-accent;
+    color: white;
+    .border-radius-small();
+  }
+  .lib-newplaylist {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    margin-left: -25px;
+    & :before {
+      content: '';
+      width: 30px;
+      height: 30px;
+      left: 0px;
+      top: 0px;
+      position: absolute;
+      z-index: 1000;
+      background: url(images/icon-newplaylist.png) no-repeat;
+    }
+  }
+  /* Now Playing Box */
+    .container-nowplaying {
+      position: relative;
+    }
+    .nowplaying-song, .nowplaying-artist {
+      color: white;
+      text-align: left;
+
+    }
+    .container-nowplaying p.glyphicon {
+      position: absolute;
+      right: 30px;
+      top: 10px;
+      color: @light-grey;
+      display: block;
+    }
+    .container-nowplaying time {
+      position: absolute; 
+      right: -10px;
+      top: 7px;
+      font-size: 9pt;
+      color: white;
+    }
+    .nowplaying-song {
+      margin-top: 10px;
+      margin-bottom: 0px;
+    }
+    .nowplaying-artist {
+      font-size: .8em;
+    }
+    .save-btn {
+      position: absolute;
+      right: -15px;
+      top: 20px;
+    }
+
+
+/*** End Library nav ***/
+
+/*** Tracklisting ***/
+.track {
+  padding-top: 7px;
+  padding-bottom: 2px;
+  border-top: 1px solid @mid-grey;
+}
+.track p {
+  color: white;
+  text-align: left; 
+  font-size: 10pt;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.track-time p, .track-added p, .track-users p {
+    color: @light-grey !important;
+}
+.filter-bar {
+  border-bottom: 1px solid @mid-grey;
+}
+/*** End Tracklisting ***/
+
+
+/*** Social Nav ***/
+  .nav-social {
+    background: @mid-grey;
+    padding-bottom: 20px;
+    position: relative;
+    margin-top: -5px;
+      .container-social {
+        padding-bottom: 20px;
+        border-bottom: 1px solid @dark-grey;
+      }
+        /* Friends you might know block */
+          .social-friendname, .social-followercount {
+            color: white;
+            float: left;
+            clear: both;
+            width: 100%;
+            text-align: center;
+            font-weight: 300;
+          }
+          .social-friendname {
+            font-weight: 400;
+            margin-top: 5px;
+          }
+          .social-followercount {
+            text-transform: uppercase;
+            color: @light-grey;
+            font-size: .85em;
+            letter-spacing: .02em;
+            margin-top: -7px;
+          }
+          .whotofollow img {
+          margin-left: 36%;
+          margin-top: 7px;
+          }
+
+        /* Friend activity block */
+          .friendactivity  {
+            height: 400px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            width: 100%;
+            margin: 0 10px 10px 20px;
+          }
+          .friendaction {
+            border: 1px solid @dark-grey-accent;
+            min-height: 120px;
+          }
+          h3 {
+            line-height: 1.2em;
+          }
+          .friendactivity img {
+            margin-top: 15%;
+            margin-bottom: 15px;
+          }
+          p.songtitle {
+            color: white;
+            text-align: left;
+            font-weight: 500;
+            line-height: 1.2em;
+            margin-top: 10px;
+          }
+          p.artistname {
+            color: @light-grey;
+            text-align: left;
+            margin-top: -10px;
+            font-weight: 300;
+          }
+    }
+/* /social nav */
+
+/*** Custom Fonts ***/
+@font-face {
+  font-family: 'BakerSignetStdRegular';
+  src: url('fonts/bakersignetstd-webfont.eot');
+  src: url('fonts/bakersignetstd-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/bakersignetstd-webfont.woff') format('woff'), url('fonts/bakersignetstd-webfont.ttf') format('truetype'), url('fonts/bakersignetstd-webfont.svg#BakerSignetStdRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'breezi_icon_setregular';
+  src: url('fonts/breezi_font-webfont-webfont.eot');
+  src: url('fonts/breezi_font-webfont-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/breezi_font-webfont-webfont.woff2') format('woff2'), url('fonts/breezi_font-webfont-webfont.woff') format('woff'), url('fonts/breezi_font-webfont-webfont.ttf') format('truetype'), url('fonts/breezi_font-webfont-webfont.svg#breezi_icon_setregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
